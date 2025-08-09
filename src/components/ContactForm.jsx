@@ -13,7 +13,7 @@ const ContactForm = ({ onSubmit }) => {
     };
 
     return (
-        <form onSubmit={handleSubmit} role="form">
+        <form role="form" onSubmit={handleSubmit}>
             <label>
                 Nome
                 <input type="text" name="nome" value={formData.nome} onChange={handleChange} />
@@ -26,7 +26,7 @@ const ContactForm = ({ onSubmit }) => {
                 Telefone
                 <input type="tel" name="telefone" value={formData.telefone} onChange={handleChange} />
             </label>
-            <button type="submit">Enviar</button>
+            <button type="submit">Salvar</button>
         </form>
     );
 };
